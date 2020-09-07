@@ -8,7 +8,18 @@
 }
 
 .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     height: 50px;
+    margin: 20px 0;
+    button {
+        width: 100px;
+        height: 30px;
+        color: white;
+        border: none;
+        background-color: $primary-color;
+    }
 }
 
 .student-list {
