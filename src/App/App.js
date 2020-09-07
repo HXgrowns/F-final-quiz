@@ -72,9 +72,9 @@ class App extends Component {
           <h3>学员列表</h3>
           <section>
             {this.datas.map((data, index) =>
-              <input key={index} type="text" value={data.id + '.' + data.name} disabled />
+              <input key={index} type="text" value={data.id + '.' + data.name} />
             )}
-            <input className ="add-student" type = "text" placeholder = "+添加学员"/>
+            <input className="add-student" type="text" placeholder="+添加学员" />
           </section>
         </main>
       </div>
