@@ -1,12 +1,18 @@
 import React, { Component } from 'react';
 import './App.scss';
-
+import '../style/resetting.scss'
 class App extends Component {
+  
   render() {
     return (
-      <div data-testid="app" className="App">
-        Hello World
-      </div>
+      <main data-testid="app" className="App">
+        <nav className = "nav">
+          nav
+        </nav>
+        <section className = "student-list">
+        name
+        </section>
+      </main>
     );
   }
 }

@@ -1,2 +1,18 @@
+@import '../style/_variables.scss';
+
 .App {
+    margin: 0;
+    padding: 20px;
+    height: 350px;
+    background-color:$bg-gray;
 }
+
+.nav {
+    height: 50px;
+}
+
+.student-list {
+    height: 300px;
+}
+
+
