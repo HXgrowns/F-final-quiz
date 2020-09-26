@@ -10,8 +10,9 @@ class App extends Component {
     trainees: []
   }
 
+  // TODO feedback：建议把数据请求提取到单独的service
   componentDidMount() {
-    fetch("http://localhost:8080/v1/trainers?grouped=false", {
+    fetch("http://localhost:8080/trainers?grouped=false", {
       method: 'GET',
     }).then((response) => {
       if (response.ok) {
@@ -27,7 +28,7 @@ class App extends Component {
       console.error(err);
     });
 
-    fetch("http://localhost:8080/v1/trainees?grouped=false", {
+    fetch("http://localhost:8080/trainees?grouped=false", {
       method: 'GET',
     }).then((response) => {
       if (response.ok) {
@@ -38,12 +39,14 @@ class App extends Component {
       this.setState({
         trainees: data,
       });
+      // TODO feedback：不建议提交console.log
       console.log([field]);
     }).catch((err) => {
       console.error(err);
     });
   }
 
+  // TODO feedback：组件划分不够合理，划分层次不够
   render() {
     return (
       <div data-testid="app" className="App">

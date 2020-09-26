@@ -23,6 +23,7 @@ class Group extends Component {
     // }
 
     render() {
+        // TODO feedback：建议使用ES6语法解构
         let team2stus = this.state.teamToStudents;
         return (
             <div className = 'group'>

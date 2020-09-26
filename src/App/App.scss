@@ -12,6 +12,8 @@
     align-items: center;
     height: 50px;
     margin: 20px 0;
+
+    // TODO feedback：可以把button样式提取成mixin
     button {
         width: 100px;
         height: 30px;

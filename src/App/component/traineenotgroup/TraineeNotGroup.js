@@ -4,6 +4,7 @@ import "antd/dist/antd.css"
 
 import { Popover } from "antd";
 
+// TODO feedback：组件命名不准确
 class TraineeNotGroup extends Component {
 
     render() {
@@ -25,6 +26,8 @@ class TraineeNotGroup extends Component {
                 <section>
                     {this.props.trainees.map((trainee, index) =>
                         <Popover content={content} title="title">
+                          {/* TODO feedback：可以使用ES6 字符串拼接方式 */}
+                          {/* TODO feedback：不建议使用input实现 */}
                             <input key={index} type="text" value={trainee.id + '.' + trainee.name} />
                         </Popover>
                     )}
